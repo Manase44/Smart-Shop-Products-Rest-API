@@ -2,7 +2,7 @@ import pkg from "pg";
 import { config } from "dotenv";
 const { Pool } = pkg;
 
-config()
+config();
 const pool = new Pool({
   user: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,

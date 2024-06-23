@@ -9,12 +9,10 @@ const deleteProduct = async (req, res) => {
     if (deleteProduct.rowCount === 1) {
       res.json({ ok: true, message: "The product was deleted successfully" });
     } else {
-      res
-        .status(500)
-        .json({
-          ok: false,
-          message: "Failed to find the product you want to delete",
-        });
+      res.status(500).json({
+        ok: false,
+        message: "Failed to find the product you want to delete",
+      });
     }
   } catch (error) {
     res.status(500).json({ ok: false, message: error.message });

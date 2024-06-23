@@ -18,19 +18,15 @@ const updateProduct = async (req, res) => {
     );
 
     if (updateProduct.rowCount === 1) {
-      res
-        .status(200)
-        .json({
-          ok: true,
-          message: "Products details were updated successfully",
-        });
+      res.status(200).json({
+        ok: true,
+        message: "Products details were updated successfully",
+      });
     } else {
-      res
-        .status(500)
-        .json({
-          ok: false,
-          message: "Failed to find the product you want to update",
-        });
+      res.status(500).json({
+        ok: false,
+        message: "Failed to find the product you want to update",
+      });
     }
   } catch (error) {
     res.status(500).json({ ok: false, message: error.message });
