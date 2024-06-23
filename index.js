@@ -1,11 +1,11 @@
-import express from 'express'
-import productsRoute from './routes/products.routes.js'
+import express from "express";
+import productsRoute from "./routes/products.routes.js";
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use("/products", productsRoute)
+app.use(express.json());
+app.use("/products", productsRoute);
 
 app.listen(3000, () => {
-    console.log("server running successfully")
-})
+  console.log("server running successfully");
+});
