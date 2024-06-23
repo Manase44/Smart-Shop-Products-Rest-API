@@ -54,26 +54,42 @@ Great! You have successful connected the application with your database. Run com
 Open your API platform, I will use post man for demonstartion:
 
 Click on `new` to creat a new request:
+
 ![click new](./assets/new.png)
+
 Click `HTTP`:
+
 ![click http](./assets/http.png)
 
 ### Step 5: Send your HTTP requests
 
 Very well, you can now make you requests with the following API endpoints (_make sure to use your suplied host sever in place of localhost_):
 
-1. Getting all products  
+1. Getting all products
+
    `GET` localhost:3000/products
+
    ![getting all products](./assets/gettall.png)
+
 2. Getting a single product
+
    `GET` localhost:3000/products/`product-id e.g. 2`
+
    ![getting single product](./assets/getsingle.png)
+
 3. Creating a new product
    `POST` json data at endpoint : localhost:3000/products
+
    ![creating new product](./assets/createnew.png)
-4. Updating a product  
+
+4. Updating a product
+
    `PATCH` json data at endpoint: localhost:3000/products/`product-id e.g. 2`
+
    ![updating product](./assets/update.png)
-5. Delete a product  
+
+5. Delete a product
+
    `DELETE` localhost:3000/products/`product-id e.g. 2`
+
    ![deleting product](./assets/delete.png)
