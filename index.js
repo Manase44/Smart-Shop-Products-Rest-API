@@ -3,7 +3,7 @@ import productsRoute from './routes/products.routes.js'
 
 const app = express()
 
-
+app.use(express.json())
 app.use("/products", productsRoute)
 
 app.listen(3000, () => {
